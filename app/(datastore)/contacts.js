@@ -1,4 +1,4 @@
-const { getContactListApi, addContactApi } = require("../(api)/contactApi");
+const { getContactListApi, addContactApi, editContactApi, deleteContactApi } = require("../(api)/contactApi");
 
 class PayeeContacts {
     constructor(contacts) {
@@ -83,4 +83,30 @@ const addPayee = async (contact) => {
     }
 }
 
-export {initiateContactsDataStore, addPayee}
+const getPayeeList = () => {
+    const contactsDataStore = getContactDataStoreInstance();
+
+    return contactsDataStore.payeeList;
+}
+
+const editPayee = async(contact) => {
+    const contactsDataStore = getContactDataStoreInstance();
+
+    let result = await editContactApi(contact);
+
+    if(result) {
+        contactsDataStore.editContact(contact)
+    }
+}
+
+const deletePayee = async(contact) => {
+    const contactsDataStore = getContactDataStoreInstance();
+
+    let result = await deleteContactApi(contact);
+
+    if(result) {
+        contactsDataStore.deleteContact(contact)
+    }
+}
+
+export {initiateContactsDataStore, getPayeeList, addPayee, editPayee, deletePayee}
