@@ -14,8 +14,10 @@ const Login = () => {
     if (!username || !password) {
       setErrorMsg("All fields must be filled");
       setError(true);
-      return false;
+      return;
     }
+
+    window.location = "/";
   };
 
   const closeError = () => {

@@ -3,7 +3,7 @@ import { GrDocumentText } from "react-icons/gr";
 import Image from "next/image";
 import { Nav } from "react-bootstrap";
 import { FaHome, FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import logo from "../(assets)/logo.jpg";
+import logoImg from "@/app/assets/zing-logo.png";
 
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,7 +19,7 @@ const Sidebar = () => {
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar_header">
           {!sidebarOpen && (
-            <Image src={logo} alt="Avatar" width={90} height={50} />
+            <Image src={logoImg} alt="Avatar" width={90} height={50} />
           )}
 
           <button className="toggle_button" onClick={toggleSidebar}>
