@@ -1,7 +1,9 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /*
@@ -22,25 +24,93 @@ body {
 /*
   5. Improve media defaults
 */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /*
   6. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /*
   7. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 /*
   8. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
+}
+
+.primary {
+  color: #ffffff;
+  background-color: #30d63d;
+}
+
+.text-primary {
+  color: #30d63d;
+}
+
+.scondary {
+  color: #ffffff;
+  background-color: #2c2a8d;
+}
+
+.text-scondary {
+  color: #2c2a8d;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background: #30d63d;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #1f8127;
+  color: #ffffff;
+}
+
+.btn-scondary {
+  background: #2c2a8d;
+  color: #ffffff;
+}
+
+.btn-scondary:hover {
+  background: #212069;
+  color: #ffffff;
+}
+
+.btn-gray {
+  background: #bdbdbd;
+  color: #ffffff;
+}
+
+.btn-gray:hover {
+  background: #717171;
+  color: #ffffff;
 }
