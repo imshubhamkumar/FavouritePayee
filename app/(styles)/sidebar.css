@@ -1,0 +1,58 @@
+ .sidebar {
+    width: 233px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Add transition for smooth width change */
+  }
+  
+  .open {
+    width: 50px; /* Adjust the width to show the sidebar */
+  }
+  
+  .sidebar_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #444;
+  }
+  
+  .header_content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo_container {
+    margin-right: 10px;
+  }
+  
+  .toggle_button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .nav_text {
+    color: white;
+    padding-left: 44px;
+  }
+
+  .nav_menu svg{
+    color: white;
+  }
+  .nav_menu{
+    margin-top: 20px;
+    display: flex;
+  }
+  .nav_menu:hover {
+    background-color: #555 !important;
+  }
+  .right_icon_dropdown{
+    margin-left: -4px;
+    min-width: 10px;
+  }
+  

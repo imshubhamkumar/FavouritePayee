@@ -1,5 +1,6 @@
 .listing-container {
-    width: 700px;
+    position: relative;
+    top: 20px;
 }
 
 .listing-header {
