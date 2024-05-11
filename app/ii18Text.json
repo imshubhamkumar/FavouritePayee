@@ -1,0 +1,22 @@
+{
+    "nameLabel": {
+         "en": "Name",
+         "jp": "名前"
+    },
+    "accountNumber": {
+     "en": "Account Number",
+     "jp": "口座番号"
+    },
+    "bankName": {
+     "en": "Bank Name",
+     "jp": "銀行名"
+    },
+    "Add": {
+     "en": "Add",
+     "jp": "追加"
+    },
+    "payeeList": {
+     "en": "Payee List",
+     "jp": "受取人リスト"
+    }
+ }
