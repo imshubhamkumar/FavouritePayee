@@ -1,0 +1,112 @@
+.auth-page-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(48, 214, 61, 0.3086484593837535) 0%,
+    rgba(210, 212, 211, 1) 66%
+  );
+}
+
+.login-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: -1px 1px 44px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 44px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 44px -20px rgba(0, 0, 0, 0.75);
+}
+
+.logo-container {
+  width: 40%;
+  position: relative;
+  top: 40%;
+}
+
+.login-data-container {
+  width: 60%;
+  border-left: 1px solid;
+}
+
+input.form-control,
+.login-btn {
+  width: 70%;
+  padding: 5px !important;
+}
+
+.forgot-pass {
+  width: 70%;
+  padding-right: 5px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  flex-direction: row-reverse;
+}
+
+.forgot-text-container {
+  font-size: 12px;
+  color: #3059e9;
+  cursor: pointer;
+}
+
+.hello-text {
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.input-group-text {
+  cursor: pointer;
+}
+
+.welcom-msg {
+  padding: 5px;
+  font-size: 14px;
+}
+.error-msg {
+  background-color: red;
+  color: #ffff;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.close-btn {
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 80%;
+    border: none;
+    padding: 2px !important;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+
+  .forgot-pass {
+    width: 100%;
+  }
+
+  .login-data-container {
+    border: none;
+    width: 100%;
+  }
+
+  .logo-container {
+    top: 0px;
+  }
+}

@@ -67,7 +67,7 @@ h6 {
 }
 
 .text-primary {
-  color: #30d63d;
+  color: #30d63d !important;
 }
 
 .scondary {
@@ -113,4 +113,16 @@ h6 {
 .btn-gray:hover {
   background: #717171;
   color: #ffffff;
+}
+
+input {
+  padding: 5px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }
