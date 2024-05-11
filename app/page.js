@@ -1,8 +1,12 @@
 
-// This is the dashboard page
+"use client"
+import Layout from './(components)/Layout';
+import "./(styles)/sidebar.css"
 
 export default function Home() {
   return (
-    <p>Home page</p>
+    <Layout>
+  </Layout>
   );
 }
+
