@@ -1,3 +1,4 @@
+"use client";
 import logoImg from "@/app/assets/zing-logo.png";
 import Image from "next/image";
 import { useState } from "react";
@@ -22,6 +23,11 @@ const Signup = () => {
     }
     if (!validateEmail(email)) {
       setErrorMsg("Enter Valid email id");
+      setError(true);
+      return false;
+    }
+    if (password.length < 8) {
+      setErrorMsg("Password must be atleast 8 digit long");
       setError(true);
       return false;
     }
