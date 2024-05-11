@@ -1,0 +1,55 @@
+.auth-page-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(48, 214, 61, 0.3086484593837535) 0%,
+    rgba(210, 212, 211, 1) 66%
+  );
+}
+
+.login-container {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  min-height: 50%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: -1px 1px 44px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 44px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 44px -20px rgba(0, 0, 0, 0.75);
+}
+
+.logo-container {
+  width: 40%;
+  position: relative;
+  top: 40%;
+}
+
+.login-data-container {
+  width: 60%;
+  border-left: 1px solid;
+}
+
+input.form-control,
+.login-btn {
+  width: 70%;
+  padding: 5px !important;
+}
+
+.forgot-pass {
+  width: 70%;
+  padding-right: 5px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  flex-direction: row-reverse;
+}
+
+.forgot-text-container {
+  font-size: 12px;
+  color: #3059e9;
+  cursor: pointer;
+}
