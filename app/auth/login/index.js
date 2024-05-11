@@ -1,3 +1,4 @@
+"use client";
 import logoImg from "@/app/assets/zing-logo.png";
 import Image from "next/image";
 import { useState } from "react";
@@ -16,7 +17,7 @@ const Login = () => {
       return;
     }
 
-    window.location = "/"
+    window.location = "/";
   };
 
   const closeError = () => {
@@ -40,6 +41,7 @@ const Login = () => {
             <input
               type="text"
               class="form-control"
+              name="username"
               placeholder="Username"
               aria-label="Username"
               aria-describedby="basic-addon1"

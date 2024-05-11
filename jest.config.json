@@ -1,10 +1,21 @@
 {
-    "compilerOptions": {
-      "module": "esnext",
-      "moduleResolution": "bundler",
-      "baseUrl": "./",
-      "paths": {
-        "@/components/*": ["components/*"]
-      }
-    }
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "baseUrl": "./",
+    "paths": {
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/auth/*": [
+        "auth/*"
+      ]
+    },
+    "transform": {
+      "^.+\\.(ts|tsx|js|jsx)$": "ts-jest"
+    },
+    "presets": [
+      "@babel/preset-react"
+    ]
   }
+}
