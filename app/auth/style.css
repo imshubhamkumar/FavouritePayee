@@ -10,11 +10,13 @@
 
 .login-container {
   position: relative;
+  display: flex;
+  flex-direction: row;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
-  min-height: 50%;
+  height: 60%;
   border-radius: 5px;
   background-color: #ffffff;
   -webkit-box-shadow: -1px 1px 44px -20px rgba(0, 0, 0, 0.75);
@@ -52,4 +54,59 @@ input.form-control,
   font-size: 12px;
   color: #3059e9;
   cursor: pointer;
+}
+
+.hello-text {
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.input-group-text {
+  cursor: pointer;
+}
+
+.welcom-msg {
+  padding: 5px;
+  font-size: 14px;
+}
+.error-msg {
+  background-color: red;
+  color: #ffff;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.close-btn {
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 80%;
+    border: none;
+    padding: 2px !important;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+
+  .forgot-pass {
+    width: 100%;
+  }
+
+  .login-data-container {
+    border: none;
+    width: 100%;
+  }
+
+  .logo-container {
+    top: 0px;
+  }
 }
